@@ -1,3 +1,7 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page isELIgnored="false" %>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,6 +15,8 @@
 
   <h1>CRM Java</h1>
   <h2>List of Customers</h2>
+  <!--/*@thymesVar id="message" type="csnam.ed.java.controllers.IndexController"*/-->
+  <p>${message}</p>
 
 </body>
 </html>

@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * This is the controller for the Customer model
  */
 @Controller
-@RequestMapping("/")
 public class IndexController {
 
   @RequestMapping("/")
   public String index(Model model) {
+
     return "index";
   }
 

@@ -23,9 +23,25 @@
   <!-- Define Spring MVC view resolver -->
   <bean
     class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-    <property name="prefix" value="/WEB-INF/views/" />
+    <property name="prefix" value="/views/" />
     <property name="suffix" value=".jsp" />
   </bean>
+
+  <!-- Define Thymeleaf View Resolver -->
+<!--  <bean id="templateResolver" class="org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver">-->
+<!--    <property name="prefix" value="/views/"/>-->
+<!--    <property name="suffix" value=".html"/>-->
+<!--    <property name="templateMode" value="HTML5"/>-->
+<!--    <property name="cacheable" value="false"/>-->
+<!--  </bean>-->
+<!--  <bean id="templateEngine" class="org.thymeleaf.spring5.SpringTemplateEngine">-->
+<!--    <property name="templateResolver" ref="templateResolver"/>-->
+<!--  </bean>-->
+<!--  <bean class="org.thymeleaf.spring5.view.ThymeleafViewResolver">-->
+<!--    <property name="templateEngine" ref="templateEngine"/>-->
+<!--    <property name="order" value="1"/>-->
+<!--    <property name="viewNames" value="thymeleaf/*"/>-->
+<!--  </bean>-->
 
   <!-- Step 1: Define Database DataSource / connection pool -->
   <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
