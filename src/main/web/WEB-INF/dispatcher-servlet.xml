@@ -31,7 +31,7 @@
   <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
     destroy-method="close">
     <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
-    <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/web_customer_tracker?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false" />
+    <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/crm_db?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false" />
     <property name="user" value="crmuser" />
     <property name="password" value="pass90210" />
 
